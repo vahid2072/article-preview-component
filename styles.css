@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--Light-Grayish-Blue);
+}
+
+.card {
+  width: 375px;
+  height: 600px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+.container {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+}
+.container-for-spaces {
+  padding: 40px 25px 18px 25px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 14px;
+  padding-right: 50px;
+  line-height: 1.6rem;
+  color: var(--Grayish-Blue);
+}
+
+#profile-container, #social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#profile-container {
+  margin-top: 15px; 
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.profile-name,h1 {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 50%;
+  display: inline-block;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  cursor: pointer;
+}
+
+#social-media-icons {
+  background-color: var(--Very-Dark-Grayish-Blue);
+  padding: 0px 30px;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  height: 75px;
+  margin-top: -10px; 
+}
+
+.share-word {
+  letter-spacing: 0.5em;
+  font-weight: 500;
+}
+
+.social-media-image {
+  margin-left: -150px;
+}
+
+.social-media-image img {
+  margin-left: 20px;
+}
+
+#share span {
+  background-color: var(--Grayish-Blue);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 400px;
+    height: 350px;
+  }
+
+  .drawer-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-for-spaces {
+    padding: 40px 75px 0px 75px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+
+  #profile-container {
+    margin-top: 15px;
+  }
+
+  .profile-picture {
+    width: 50px;
+  }
+
+  .text {
+    margin-left: -20px;
+  }
+
+  .dot {
+    width: 30px;
+    height: 30px;
+  }
+
+  #share-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  #social-media-icons {
+    margin-top: 20px;
+    height: 60px;
+  }
+
+  .share-word {
+    letter-spacing: 0.3em;
+    font-weight: 500;
+  }
+  
+  .social-media-image {
+    margin-left: -90px;
+  }
+  
+  .social-media-image img {
+    margin-left: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .card {
+    width: 550px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drawer-img {
+    width: 35%;
+    height: 100%;
+  }
+
+  .container {
+    width: 65%;
+    height: 100%;
+    position: relative;
+  }
+
+  .container-for-spaces {
+    padding: 20px 35px 0px 35px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+
+  #profile-container {
+    margin-top: 15px;
+  }
+
+  .profile-picture {
+    width: 60px;
+  }
+
+  .text {
+    margin-left: -50px;
+  }
+
+  .dot {
+    width: 50px;
+    height: 50px;
+  }
+
+  #share-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  #social-media-icons {
+    position: absolute;
+    right: -5%;
+    bottom: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .share-word {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-left: -10px;
+  }
+  
+  .social-media-image img {
+    margin-left: 5px;
+  }
+
+  .dot2 {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drawer-img {
+    width: 35%;
+    height: 100%;
+  }
+
+  .container {
+    width: 65%;
+    height: 100%;
+  }
+
+  .container-for-spaces {
+    padding: 40px 75px 0px 75px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+
+  #profile-container {
+    margin-top: 15px;
+  }
+
+  .profile-picture {
+    width: 60px;
+  }
+
+  .text {
+    margin-left: -60px;
+  }
+
+  .dot {
+    width: 50px;
+    height: 50px;
+  }
+
+  #share-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .share-word {
+    letter-spacing: 0.2em;
+    font-weight: 500;
+  }
+  
+  .social-media-image img {
+    margin-left: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 900px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drawer-img {
+    width: 35%;
+    height: 100%;
+  }
+
+  .container {
+    width: 65%;
+    height: 100%;
+  }
+
+  .container-for-spaces {
+    padding: 40px 75px 0px 75px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+
+  #profile-container {
+    margin-top: 15px;
+  }
+
+  .profile-picture {
+    width: 60px;
+  }
+
+  .text {
+    margin-left: -150px;
+  }
+
+  .dot {
+    width: 50px;
+    height: 50px;
+  }
+
+  #share-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drawer-img {
+    width: 35%;
+    height: 100%;
+  }
+
+  .container {
+    width: 65%;
+    height: 100%;
+  }
+
+  .container-for-spaces {
+    padding: 40px 75px 0px 75px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+
+  #profile-container {
+    margin-top: 15px;
+  }
+
+  .profile-picture {
+    width: 60px;
+  }
+
+  .text {
+    margin-left: -200px;
+  }
+
+  .dot {
+    width: 50px;
+    height: 50px;
+  }
+
+  #share-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .share-word {
+    letter-spacing: 0.3em;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .drawer-img {
+    width: 35%;
+    height: 100%;
+  }
+
+  .container {
+    width: 65%;
+    height: 100%;
+  }
+
+  .container-for-spaces {
+    padding: 40px 75px 0px 75px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+    padding-right: 0px;
+    font-weight: 500;
+  }
+
+  #profile-container {
+    margin-top: 15px;
+  }
+
+  .profile-picture {
+    width: 60px;
+  }
+
+  .text {
+    margin-left: -200px;
+  }
+
+  .dot {
+    width: 50px;
+    height: 50px;
+  }
+
+  #share-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .share-word {
+    letter-spacing: 0.4em;
+    font-weight: 500;
+  }
+}
